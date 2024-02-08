@@ -3,8 +3,10 @@ package com.example.tour.mapper;
 import com.example.tour.data.models.CarnivalAndFestival;
 import com.example.tour.data.models.Info;
 import com.example.tour.data.models.Tour;
+import com.example.tour.data.models.Tourist;
 import com.example.tour.dtos.requests.CreateFestivalAndCarnivalRequest;
 import com.example.tour.dtos.requests.CreateTourRequest;
+import com.example.tour.dtos.requests.RequestForTour;
 import com.example.tour.dtos.response.CarnivalMapperResponse;
 import com.example.tour.dtos.response.TourMapperResponse;
 
@@ -50,5 +52,15 @@ public class Mapper {
         info.setEndingDay(request.getEndingDate());
         info.setStartingDay(request.getStartingDate());
         return info;
+    }
+
+    public static Tourist map(RequestForTour request) {
+        Tourist tourist = new Tourist();
+        tourist.setAllergy(request.getAllergy());
+        tourist.setEmail(request.getEmail());
+        tourist.setEmergencyNumber(request.getEmergencyNumber());
+        tourist.setFullName(request.getFullName());
+        tourist.setPhoneNumber(request.getPhoneNumber());
+        return tourist;
     }
 }

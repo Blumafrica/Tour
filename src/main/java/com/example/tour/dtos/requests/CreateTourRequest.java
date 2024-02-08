@@ -20,4 +20,5 @@ public class CreateTourRequest {
     private String city;
     private String startingDate;
     private String endingDate;
+    private String adminId;
 }

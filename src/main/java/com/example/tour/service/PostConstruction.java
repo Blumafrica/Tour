@@ -16,6 +16,8 @@ public class PostConstruction {
     @PostConstruct
     private void createAdmin(){
         Admin admin = new Admin();
-
+        admin.setPassword("MA202M@I");
+        admin.setName("admin22");
+        adminRepository.save(admin);
     }
 }

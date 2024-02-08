@@ -36,7 +36,6 @@ class CarnivalAndFestivalControllerTest {
         request.setName("ogun festival");
         request.setState("lagos state");
         request.setYear("2024");
-        request.setStreet("8 moss street");
         request.setFiles(List.of("C:\\Users\\mariam\\Tour\\src\\main\\resources\\templates", "C:\\Users\\mariam\\Tour\\src\\main\\resources\\static"));
 
         try {

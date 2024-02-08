@@ -27,7 +27,6 @@ class BlumaCarnivalAndFestivalServiceTest {
         request.setName("ogun festival");
         request.setState("oyo state");
         request.setYear("2024");
-        request.setStreet("8 moss street");
         request.setFiles(List.of("collect", "back"));
         request.setEndingDay("april 1");
         request.setEndingDay("march 29");
